@@ -13,7 +13,10 @@ valeur = ('as', '2', '3', '4', '5', '6', '7',
 
 # TODO calculer la main du croupier ou du joueur en fonction des cartes tirées par l'un ou l'autre
 def calculer_main(cartes):
-    pass
+    total = 0
+    for i in range(0, cartes.len):
+        total+=carte[i].valeur
+        return total
 
 
 class Carte:  # la classe Carte, c'est cadeau
